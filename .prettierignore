@@ -1,0 +1,15 @@
+node_modules
+public
+dist
+mock
+*.lock
+yarn-error.log
+deploy-linux.js
+deploy-win.js
+deploy.config.js
+/.git/
+/.vscode/
+/**/*.d.ts
+.husky
+.stylelintrc.js
+commitlint.config.js

@@ -1,0 +1,24 @@
+iframe {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+}
+
+.impowerBox .title {
+	display: none;
+}
+
+.title,
+.info {
+	display: none !important;
+}
+
+.impowerBox .qrcode {
+	width: 100% !important;
+	margin: 0 !important;
+	border: none !important;
+}

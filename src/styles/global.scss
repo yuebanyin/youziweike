@@ -1,0 +1,229 @@
+@import url('../theme/black.scss');
+@import url('../theme/white.scss');
+
+html,
+body,
+#root {
+  margin: 0;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.ripple {
+  transition: transform 0.2s var(--em-ripple-cubic-bezier, cubic-bezier(0.68, 0.01, 0.62, 0.6)), opacity 0.14s linear;
+  will-change: transform, opacity;
+}
+
+button,
+input,
+div,
+span,
+form,
+ul,
+li,
+ol {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+}
+
+div::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 10px;
+}
+
+.oe-2 {
+  -webkit-line-clamp: 2;
+}
+
+.mulit-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.steps-12 {
+  animation-timing-function: steps(12);
+}
+
+.spinner:nth-child(1) {
+  transform: rotate(30deg);
+  opacity: 1;
+}
+
+.spinner:nth-child(2) {
+  transform: rotate(60deg);
+  opacity: 0.9375;
+}
+
+.spinner:nth-child(3) {
+  transform: rotate(90deg);
+  opacity: 0.875;
+}
+
+.spinner:nth-child(4) {
+  transform: rotate(120deg);
+  opacity: 0.8125;
+}
+
+.spinner:nth-child(5) {
+  transform: rotate(150deg);
+  opacity: 0.75;
+}
+
+.spinner:nth-child(6) {
+  transform: rotate(180deg);
+  opacity: 0.6875;
+}
+
+.spinner:nth-child(7) {
+  transform: rotate(210deg);
+  opacity: 0.625;
+}
+
+.spinner:nth-child(8) {
+  transform: rotate(240deg);
+  opacity: 0.5625;
+}
+
+.spinner:nth-child(9) {
+  transform: rotate(270deg);
+  opacity: 0.5;
+}
+
+.spinner:nth-child(10) {
+  transform: rotate(300deg);
+  opacity: 0.4375;
+}
+
+.spinner:nth-child(11) {
+  transform: rotate(330deg);
+  opacity: 0.375;
+}
+
+.spinner:nth-child(12) {
+  transform: rotate(360deg);
+  opacity: 0.3125;
+}
+
+.cube:nth-child(1) {
+  animation-delay: -1.1s;
+}
+
+.cube:nth-child(2) {
+  animation-delay: -0.9s;
+}
+
+.cube:nth-child(3) {
+  animation-delay: -0.7s;
+}
+
+.cube:nth-child(4) {
+  animation-delay: -0.5s;
+}
+
+.wave:nth-child(1) {
+  animation-delay: -0.4s;
+}
+
+.wave:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: -0.2s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: -0.1s;
+}
+
+.circle:nth-child(1) {
+  animation-delay: -0.4s;
+}
+
+.circle:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0;
+}
+
+.animate-running {
+  animation-play-state: running;
+}
+
+.animate-paused {
+  animation-play-state: paused;
+}
+
+.mask-imgage {
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.6) 10%, #fff 25%, #fff 75%);
+}
+
+// 单行省略
+.oe {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  // 多行省略
+  &-two {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*! autoprefixer: off */
+  }
+}
+
+// 优惠券原型凹陷 为元素
+.coupon {
+  &::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    position: absolute;
+    right: 118px;
+    bottom: 84px;
+  }
+
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    position: absolute;
+    right: 118px;
+    top: 84px;
+  }
+}
+
+
+// 
+iframe {
+	width: 100% !important;
+	height: 100% !important;
+}
